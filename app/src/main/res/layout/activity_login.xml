@@ -52,7 +52,7 @@
         android:clickable="true"
         android:focusable="true"
         android:autofillHints=""
-        android:inputType="TODO"
+        android:inputType="textEmailAddress"
         tools:ignore="TextFields" />
 
     <EditText
@@ -66,7 +66,7 @@
         android:clickable="true"
         android:focusable="true"
         android:autofillHints=""
-        android:inputType="TODO"
+        android:inputType="text"
         tools:ignore="TextFields" />
 
     <Button
