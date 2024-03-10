@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity"
+    android:background="@drawable/background"
+    >
+
+    <ImageView
+        android:id="@+id/logo_cadastro"
+        android:layout_width="200dp"
+        android:layout_height="160dp"
+        android:src="@drawable/logoprincipal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/logo_cadastro"
+        android:contentDescription="@string/toodo" />
+
+    <View
+        android:id="@+id/faixa_acima"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:background="@color/orangeb"
+        android:layout_marginTop="0dp"
+        tools:ignore="MissingConstraints" />
+    <View
+        android:id="@+id/faixa_abaixo"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:background="@color/orangeb"
+        android:layout_marginBottom="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <EditText
+        android:id="@+id/Email_cadastro"
+        style="@style/Edit_Text"
+        android:layout_marginTop="150dp"
+        android:autofillHints=""
+        android:clickable="true"
+        android:focusable="true"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TextFields" />
+    <EditText
+        android:id="@+id/username"
+        style="@style/Edit_Text"
+        android:layout_marginTop="220dp"
+        android:autofillHints=""
+        android:clickable="true"
+        android:focusable="true"
+        android:hint="@string/username"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TextFields" />
+    <EditText
+        android:id="@+id/senha"
+        style="@style/Edit_Text"
+        android:layout_marginTop="290dp"
+        android:autofillHints=""
+        android:clickable="true"
+        android:focusable="true"
+        android:hint="@string/senha"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TextFields" />
+    <EditText
+        android:id="@+id/confirmar"
+        style="@style/Edit_Text"
+        android:layout_marginTop="360dp"
+        android:autofillHints=""
+        android:clickable="true"
+        android:focusable="true"
+        android:hint="@string/confirmarsenha"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TextFields" />
+    <!--caixa de chekbox-->
+    <CheckBox
+        android:id="@+id/caixa_receber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/novidades"
+        android:textSize="18sp"
+        android:textColor="@color/orangeb"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="30dp"
+        app:layout_constraintTop_toBottomOf="@id/confirmar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:buttonTint="@color/orangeb"
+        />
+    <!--caixa de chekbox-->
+    <CheckBox
+        android:id="@+id/caixa_termos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/termos"
+        android:textSize="18sp"
+        android:textColor="@color/orangeb"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="30dp"
+        app:layout_constraintTop_toBottomOf="@id/caixa_receber"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:buttonTint="@color/orangeb"
+        />
+    <!--aqui esta o botão para cadastrar -->
+
+    <Button
+        android:id="@+id/cadastrar"
+        style="@style/botao"
+        android:text="@string/cadastrar"
+        app:layout_constraintTop_toBottomOf="@id/caixa_termos"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginHorizontal="40dp"
+        android:layout_width="match_parent"
+        android:layout_marginTop="5dp"
+        android:clickable="true"
+        android:focusable="true" />
+    <!--aqui esta o botão para para voltar e fazer login -->
+    <Button
+        android:id="@+id/voltar"
+        style="@style/botao"
+        android:text="@string/voltar"
+        app:layout_constraintTop_toBottomOf="@id/cadastrar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginHorizontal="40dp"
+        android:layout_width="match_parent"
+        android:layout_marginTop="15dp"
+        android:clickable="true"
+        android:focusable="true" />
+</androidx.constraintlayout.widget.ConstraintLayout>

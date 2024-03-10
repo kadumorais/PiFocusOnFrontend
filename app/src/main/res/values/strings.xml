@@ -6,4 +6,10 @@
     <string name="focuson">FocusOn</string>
     <string name="senha">Senha</string>
     <string name="toodo">TODO</string>
+    <!-- as string que o miguel criou-->
+    <string name="username">Username</string>
+    <string name="confirmarsenha">Confirmar Senha</string>
+    <string name="termos">Lí e concordo com os termos de cadastro</string>
+    <string name="novidades">Receber novidades do email</string>
+    <string name="voltar">Voltar para fazer login</string>
 </resources>
